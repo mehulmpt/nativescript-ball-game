@@ -1,0 +1,5 @@
+<Page loaded="myPageWasLoaded">
+	<Page.actionBar>
+		<ActionBar title="My Header" />
+	</Page.actionBar>
+</Page>
