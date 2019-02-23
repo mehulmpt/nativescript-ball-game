@@ -1,5 +1,18 @@
-<Page loaded="myPageWasLoaded">
+<Page loaded="onLoaded">
 	<Page.actionBar>
-		<ActionBar title="My Header" />
+		<ActionBar title="{{ 'Taps - ' + taps + ' Seconds - ' + seconds }}">
+			<ActionItem
+				tap="onReset"
+				ios.systemIcon="13"
+				ios.position="right"
+				android.position="actionBar"
+				android.systemIcon="ic_menu_share"
+			/>
+		</ActionBar>
 	</Page.actionBar>
+
+	<GridLayout>
+		<GridLayout id="game" touch="onTap" />
+		<Label id="meta" text="Something" />
+	</GridLayout>
 </Page>
